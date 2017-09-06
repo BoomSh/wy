@@ -1,6 +1,120 @@
 
 		
+		<!--banner轮播图开始-->
+		<section class="banner">
+			<!--移动端banner-->
+			<div class="container banner_container visible-xs">
+				<div class="row banner_row">
+					<div class="col-sm-12 banner_12">
+							<div class="swiper-container">
+				        <div class="swiper-wrapper">
+				        		<div class="swiper-slide">
+				            	<a href="#">
+				            		<!--移动端-->
+				            		<img class="img-responsive center-block visible-xs" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/mbanner_e_1701.png"/>
+				            	</a>			            	
+				            </div>
+				            <div class="swiper-slide">
+				            	<a href="#">
+				            		<!--移动端-->
+				            		<img class="img-responsive center-block visible-xs" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/mbanner_e_1704.png"/>
+				            	</a>			            	
+				            </div>
+				            <div class="swiper-slide">
+				            	<a href="#">
+				            		<!--移动端-->
+				            		<img class="img-responsive center-block visible-xs" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/mbanner_e_1705.png"/>
+				            	</a>
+				            </div>      
+				        </div>
+        			<!-- Add Pagination -->
+        			<div class="swiper-pagination"></div>
+        			<!--左右箭头-->
+        			<div class="swiper-button-next hidden-xs"></div>
+        			<div class="swiper-button-prev hidden-xs"></div>
+    				</div>
+					</div>
+				</div>
+			</div>
+			<!--pc端banner-->
+			<div class="container pc_banner_container hidden-xs">
+				<div class="row pc_banner_row">
+					<div class="col-sm-12 pc_banner_col_sm_12">					
+						<div id="myCarousel" class="carousel slide">
+						    <!-- 轮播（Carousel）指标 -->
+						    <ol class="carousel-indicators">
+						        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						        <li data-target="#myCarousel" data-slide-to="1"></li>
+						        <li data-target="#myCarousel" data-slide-to="2"></li>
+						    </ol>   
+						    <!-- 轮播（Carousel）项目 -->
+						    <div class="carousel-inner">
+						        <div class="item active">
+						            <a href="#">
+					            		<!--PC端-->
+					            		<img class="img-responsive center-block hidden-xs" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/pcbanner_e_1703.png"/>
+				            		</a>
+						        </div>
+						        <div class="item">
+						            <a href="#">
+				            			<!--PC端-->
+				            			<img class="img-responsive center-block hidden-xs" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/pcbanner_e_1704.png"/>
+				            		</a>
+						        </div>
+						        <div class="item">
+						            <a href="#">
+					            		<!--PC端-->
+					            		<img class="img-responsive center-block hidden-xs" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/pcbanner_e_1705.png"/>
+				            		</a>
+						        </div>
+						    </div>
+						    <!-- 轮播（Carousel）导航 -->
+						    <a class="carousel-control left" href="#myCarousel" 
+						        data-slide="prev"><!--&lsaquo;-->
+						    </a>
+						    <a class="carousel-control right" href="#myCarousel" 
+						        data-slide="next"><!--&rsaquo;-->
+						    </a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--banner轮播图结束-->
 		
+		<!--热门话题开始-->
+		<section class="hot_topic hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-7"></div>
+					<div class="col-sm-5 hot_topic_5">
+						<h3>Hot Topic</h3>
+						<ul>
+							<li>
+								<a href="{{:U('Index/project_details',array('tid'=>1,''))}}">
+									<h4>Selected Projects</h4>
+									<img class="img-responsive" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/arrows_right.png"/>
+								</a>
+							</li>
+							<li>
+								<a href="{{:U('Home/Index/countries_page',array('cid'=>1,''))}}">
+									<h4>Selected Countries</h4>
+									<img class="img-responsive" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/arrows_right.png"/>
+								</a>
+							</li>
+							<li>
+								<a href="{{:U('Index/project_selection')}}">
+									<h4>Project Selection</h4>
+									<img class="img-responsive" src="http://oms8e6h6f.bkt.clouddn.com/home_e/png/arrows_right.png"/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--热门话题结束-->
 		
 		<!--热门文章开始-->
 		<section class="h_essay">
