@@ -1,0 +1,47 @@
+.project_brief{width: 100%;background: #f3f3f3;padding-bottom: 60px;}
+.small_navigation h5{float: left;margin-right: 5px;padding: 10px 0;}
+.small_navigation a{color: #333333;}
+.present{color: #3899d3;}
+.brief_bt h3{color: #333333;margin-top: 10px;}
+.brief_bt h4{color: #333333;}
+
+.project_text{margin-top: 16px;background: white;border: 1px solid #e0e0e0;padding: 0 30px;}
+/*.project_text_body{border: 1px solid #e0e0e0;}
+.project_text_body .col-sm-12{margin-bottom: 18px;}*/
+.project_text_body{margin-bottom: 18px;}
+
+.project_text_body .project_text_title{border-bottom:1px solid #e0e0e0;padding:15px 0px;
+color: #333333;margin: 0px;}
+
+.national_image img{margin-bottom: 10px;}
+.project_text_passage{padding-bottom: 30px;line-height: 24px;}
+
+/*侧边成功案例开始*/
+.project_side{margin-top: 16px;}
+.successful_case h4{padding: 9px 0px;color: #333333;}
+
+.project_side{background: white;/*padding-top: 10px;*/border:1px solid #e0e0e0;padding: 12px 14px;}
+.project_side ul{margin-top: 16px;}
+.project_side ul li{padding: 0px;margin-bottom:14px;}
+.project_side ul li a{color: #333333;}
+.project_side ul li a:hover{color: #848484;transition: color 120ms linear;transition-property: color;
+transition-duration: 120ms;transition-timing-function: linear;
+transition-delay: initial;}
+.project_side ul li img{float: left;margin-right: 2%;width: 7%;}
+.project_side ul li h5{line-height: 22px;}
+/*侧边成功案例结束*/
+
+@media (max-width: 767px){
+.project_brief{margin-top: 2px;padding-bottom: 0px;}
+.brief_bt{margin-top: 10px;}
+.project_text_passage{padding-bottom: 20px;}
+.project_text{margin-top: 16px;background: white;border: 1px solid #e0e0e0;padding: 0 6px;}
+}
+/*bootsharp特殊限制开始*/
+@media (min-width: 768px){
+.small_navigation .col-sm-12{padding-left: 0;}
+.brief_bt .col-sm-12{padding-left: 0;}
+}
+/*bootsharp特殊限制结束*/
+/*侧边导航特殊处理*/
+.side_consult ul{position: fixed;right: 15px;z-index: 9999;bottom: 60px;}

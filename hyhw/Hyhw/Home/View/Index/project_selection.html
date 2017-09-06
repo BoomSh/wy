@@ -1,0 +1,135 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/project_selection.css"/>
+	
+	<!--专栏列表开始-->
+	<section class="project_brief hidden-xs">
+		<div class="container">
+			<div class="row small_navigation hidden-xs">
+				<!--<div class="col-sm-1"></div>-->
+				<div class="col-sm-12">
+					<h5>current location:</h5>
+					<a href="{{:U('Index/index')}}"><h5>Home Page  ></h5></a>
+					<a href="#"><h5 class="present">Project Selection</h5></a>
+				</div>
+			</div>
+			<!--项目甄选标题-->
+			<div class="row select_bt">
+				<!--<div class="col-sm-1"></div>-->
+				<div class="col-sm-12">
+					<h3>Project Selection</h3>
+				</div>
+			</div>
+			<!--项目甄选开始-->
+			<div class="row selection_column">
+				<!--<div class="col-sm-1">
+					
+				</div>-->
+				<div class="col-sm-2 selection_column_left">
+					<h4 style="font-size: 15px;">Immigration Programs</h4>
+					<h5>Country</h5>
+					<ul class="national_selection_ul">
+						<li><h5 class="national_project_selection">Infinite</h5></li>
+						
+						<foreach name="countries" item="vo">
+												<li><h5>{{$vo.typename}}</h5></li>
+                                                                                                </foreach>
+					</ul>
+					
+				</div>
+				<div class="col-sm-10 selection_column_right">
+
+				  <volist name="countries" id="list">
+					<div class="row nation_item">
+						<div class="table-responsive">
+	  					<table class="table table-bordered">
+	   							<tbody>
+	   								<tr>
+	   									<td class="text-center project_title">Country</td>
+	   									<td class="text-center project_title">Investment immigration</td>
+	   									<td class="text-center project_title">Skilled migration</td>
+	   									<td class="text-center project_title">Entrepreneurial migration</td>
+	   								</tr>
+	   								<tr>
+	   									<td class="td_name">
+	   										<div class="item_option_bottom">
+													<div class="country_img_name">
+														<img class="img-responsive center-block img-circle" src="{{$list.pic}}"/>
+														<h5 class="text-center">{{$list.typename}}</h5>
+													</div>
+												</div>
+	   									</td>
+	   									<td>
+	   										<div class="item_option_bottom">
+													<ul>
+                                                                                                            <foreach name="project_1" item="project_tz">
+														<li>
+															<if condition ="$project_tz['cid'] eq $list['cid']"><img class="img-responsive" src="__PUBLIC__/home/images_e/triangle_blue.png"/>
+                                                                                                                        <a href="{{:U('home/index/project_details',array('tid'=>$project_tz['tid']))}}"><h6>{{$project_tz.name}}</h6></a></if>
+														</li>
+                                                                                                            </foreach>
+													</ul>
+												</div>
+	   									</td>
+	   									<td>
+	   										<div class="item_option_bottom">
+													<ul>
+														<foreach name="project_2" item="project_js">
+														<li>
+															<if condition ="$project_js['cid'] eq $list['cid']"><img class="img-responsive" src="__PUBLIC__/home/images_e/triangle_blue.png"/>
+                                                                                                                        <a href="{{:U('home/index/project_details',array('tid'=>$project_js['tid']))}}"><h6>{{$project_js.name}}</h6></a></if>
+														</li>
+                                                                                                            </foreach>
+													</ul>
+												</div>
+	   									</td>
+                                                                                
+                                                                                <td>
+                                                                                    <div class="item_option_bottom">
+													<ul>
+														<foreach name="project_3" item="project_cy">
+														<li>
+															<if condition ="$project_cy['cid'] eq $list['cid']"><img class="img-responsive" src="__PUBLIC__/home/images_e/triangle_blue.png"/>
+                                                                                                                        <a href="{{:U('home/index/project_details',array('tid'=>$project_cy['tid']))}}"><h6>{{$project_cy.name}}</h6></a></if>
+														</li>
+                                                                                                                </foreach>
+													</ul>
+												</div>
+                                                                                    
+                                                                                </td>
+	   								</tr>
+	   							</tbody>
+	  					</table>
+						</div>
+					</div>
+				  </volist>	
+					
+				</div>
+			</div>
+			<!--项目甄选结束-->
+		</div>
+	</section>
+	<!--专栏列表结束-->
+	
+<script type="text/javascript">
+    	$(document).ready(function(){
+//  		$('.selection_column_left ul.national_selection_ul li h5').eq(0).addClass('national_project_selection');
+    		$('.selection_column_left ul.national_selection_ul li').click(function(){
+            // index方法获取当前索引
+            var i = $(this).index();
+            $('.selection_column_left ul.national_selection_ul li h5').removeClass().eq(i).addClass('national_project_selection');
+        		$('.selection_column_left ul.project_selection_ul li h5').removeClass();
+        		$('.nation_item').hide().eq(i-1).show();
+    		})
+    		$('.selection_column_left ul.national_selection_ul li:eq(0)').click(function(){
+           
+        		$('.nation_item').show();
+    		})
+    		
+//  		$('.selection_column_left ul.project_selection_ul li h5').eq(0).addClass('national_project_selection');
+    		$('.selection_column_left ul.project_selection_ul li').click(function(){
+            // index方法获取当前索引
+            var i = $(this).index();
+            $('.selection_column_left ul.project_selection_ul li h5').removeClass().eq(i).addClass('national_project_selection');
+        		$('.selection_column_left ul.national_selection_ul li h5').removeClass();
+    		})
+    	})
+    </script>

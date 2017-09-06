@@ -1,0 +1,203 @@
+/*索引导航开始索引导航开始*/
+/*.project_brief{width: 100%;background: #FFFFFF;}
+.small_navigation h5{float: left;margin-right: 5px;padding: 10px 0;}
+.small_navigation a{color: #333333;}
+.present{color: #3899d3;}*/
+/*标题以及tag选项卡开始*/
+.about_us_main{margin-top: 20px;}
+.brief_bt{color: #333333;height: 53px;line-height: 53px;margin: 0;}
+.about_us_tag{}
+.about_us_tag ul{float: right;margin-bottom: 0px;}
+.about_us_tag ul li{float: left;padding:0 18px;height: 53px;line-height: 53px;}
+.about_us_tag ul li h4{height: 53px;line-height: 53px;margin: 0;}
+.about_us_tag_active{border-bottom: 4px solid #3899d3;}
+.about_us_tag_active_h4{color: #3899d3;}
+/*.about_us_tag ul li h4:hover{border-bottom: 4px solid #3899d3;color: #3899d3;}*/
+.project_contact_us{display: none;}
+.about_us_content{margin-top: 18px;}
+/*关于我们开始*/
+/*banner*/
+/*.about_us_main .about_content_banner{width: 100%;}*/
+.about_content{margin-left: 0;margin-right: 0;}
+.about_banner_center{padding-left: 0;padding-right: 0;}
+.about_content_banner{width: 100%;}
+.about_banner_center img{width: 100%;}
+.carousel-control.left{background: none;}
+.carousel-control.right{background: none;}
+.about_banner_center .swiper-container .swiper-wrapper .swiper-slide{width: 100%;}
+@media screen and (max-width: 767px){
+.carousel{display: none;}
+
+}
+@media screen and (min-width: 768px){
+.swiper-container{display: none;}
+}
+
+
+
+
+
+
+
+/*公司文化简介开始*/
+.culture_introduction{margin-top: 50px;}
+.culture_introduction h3.culture_introduction_bt{margin: 0;color: #333333;margin-bottom: 30px;}
+/*.culture_introduction h6.culture_introduction_english{margin: 0;color: #333333;margin-bottom: 30px;}*/
+.culture_introduction h5.culture_introduction_main{color: #333333;text-indent: 32px;line-height: 22px;}
+.culture_introduction h5.culture_introduction_main:nth-last-of-type(1){margin-bottom: 0;}
+/*发展历程开始*/
+.development_history{margin-top: 50px;}
+.history_title{margin-bottom: 15px;}
+.development_history h3.culture_introduction_bt{margin: 0;color: #333333;}
+.development_history h6.culture_introduction_english{margin: 0;color: #333333;margin-bottom: 30px;}
+/*发展历程图*/
+.cd_container::before{content: '';position: absolute;top: 0;left: 50%;
+height: 100%;width: 4px;background: #3899d3;}
+.cd_timeline_block{margin:5em 0;position: relative;height: 110px;}
+.cd_timeline_img{width: 90px;height:90px;position: absolute;left: 50%;
+margin-left: -45px;}
+.cd_timeline_img h3{width: 90px;height:90px;line-height: 90px;background: #3899d3;text-align: center;
+border-radius:50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;
+-ms-border-radius:50%;-o-border-radius:50%;color: white;margin-bottom: 0;}
+.cd_timeline_content{width: 42%;box-shadow: 1px 1px 3px #cacaca;padding: 24px 16px;position: relative;
+border-radius: 8px;-webkit-border-radius:8px;-moz-border-radius:8px;
+-ms-border-radius:8px;-o-border-radius: 8px;border: 1px solid #eeeeee;}
+.cd_timeline_content::before{content: '';
+    position: absolute;
+    top: 42%;
+    left: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-left: 7px solid white;,margin-right: -14px;}
+.cd_timeline_content h4{color: #333333;line-height: 28px;}
+
+.cd_timeline_content_even{float: right;}
+.cd_timeline_content_even::before{content: '';
+    position: absolute;
+    top: 42%;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;margin-left: -14px;}
+    
+    
+/*移动端处理*/    
+@media screen and (max-width: 960px){
+/*.cd_timeline_block{margin:5em 0;position: relative;height: 8em;}*/
+.cd_container{position: relative;}
+.cd_container::before{content: '';position: absolute;top: 0;left:25px;
+height: 100%;width: 4px;background: #3899d3;}
+.cd_timeline_block{margin:3.0em 0;position: relative;height: 8em;}
+.cd_timeline_block:nth-of-type(3) .cd_timeline_content{padding-top: 10px;margin-top: 0px;padding-bottom: 10px;}
+.cd_timeline_img{width: 50px;height:50px;position: absolute;left:0;margin-top: 2.5em;
+margin-left: 0px;}
+.cd_timeline_img h3{width: 50px;height:50px;line-height: 50px;background: #3899d3;text-align: center;
+border-radius:50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;
+-ms-border-radius:50%;-o-border-radius:50%;color: white;margin-bottom: 0;margin-top: 0px;
+font-size: 18px;}
+
+.cd_timeline_content{width: auto;box-shadow: 1px 1px 3px #cacaca;padding: 14px 8px;position: relative;
+border-radius: 8px;-webkit-border-radius:8px;-moz-border-radius:8px;
+-ms-border-radius:8px;-o-border-radius: 8px;margin-top: 10px;margin-left: 65px;float: left;}
+.cd_timeline_content h4{font-size: 14px;line-height: 18px;}
+.cd_timeline_content::before{content: '';
+    position: absolute;
+    top: 40%;
+    left: -14px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;}
+.cd_timeline_content_even::before{content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white;,}  
+    
+}
+
+
+/*荣誉资质开始*/
+.honor{margin-top: 15px;}
+.honor_certificate{border: 1px solid #e0e0e0;padding: 50px 40px;margin-bottom: 50px;}
+.honor_certificate .row{margin-left:0;margin-right: 0;padding: 0 50px;}
+.honor h3.culture_introduction_bt{margin: 0;color: #333333;margin-bottom: 30px;}
+.honor h6.culture_introduction_english{margin: 0;color: #333333;margin-bottom: 30px;}
+.honor h5.culture_introduction_main{color: #333333;text-indent: 32px;line-height: 22px;}
+.honor_certificate .row:nth-of-type(2),.honor_certificate .row:nth-of-type(3){margin-top: 30px;}
+.honor_certificate .row .col-sm-3:hover{color: #3899d3;}
+.honor_certificate .row .col-sm-3 h5{line-height: 22px;}
+
+/*第二页联系我们*/
+.contact_us_map{width: 100%;padding-left: 0;padding-right: 0;}
+.contact_us_map .col-sm-12{padding-left: 0;padding-right: 0;}
+.contact_us_map .col-sm-12 img{width: 100%;}
+/*公司地址*/
+.company_address{padding-top: 80px;padding-bottom: 360px;}
+.company_address_sz{border-right: 1px solid #e0e0e0;}
+.company_address_fz{border-left: 1px solid #e0e0e0;}
+.company_address .col-sm-4{padding: 50px 20px;}
+.company_address_4 .triangle_gray{float: left;margin-top: 2px;margin-right: 12px;color: #333333;}
+.company_address_4  ul li:nth-of-type(1){padding-left: 0;}
+.company_address_4  ul li{padding-left: 24px;}
+.company_address_4  ul li h5{color: #999999;line-height: 24px;}
+.company_address_4  ul li h4{color: #333333;}
+.company_address_row_1{margin-bottom: 80px;}
+@media screen and (max-width: 767px){
+.company_address_row_1{margin-bottom: 0px;}
+.company_address_4{margin-bottom: 40px;}
+}
+
+/*移动端处理*/
+@media screen and (max-width: 767px){
+.company_address .col-sm-4.company_address_sz{padding: 10px 20px;}
+.culture_introduction h3.culture_introduction_bt{margin: 0;color: #333333;margin-bottom: 20px;}
+.development_history{margin-top: 30px;}
+.about_us_main{margin-top: 2px;}	
+.honor_certificate{margin-bottom: 0;}
+.about_banner_center img{width: 100%;}
+.culture_introduction{margin-top: 30px;}
+.project_btitle .brief_bt{display: none;}
+/*.contact_us_map img{height: 150px;}*/
+.company_address{padding-top: 40px;padding-bottom: 40px;}
+.company_address .col-sm-4{padding: 10px 20px;}
+.company_address_sz{border: none;}
+.company_address_sc{border: none;}
+
+.contact_us_map{width: 100%;padding-left: 15px;padding-right: 15px;}
+}
+@media screen and (max-width: 992px){
+.honor{display: none;}
+
+}
+
+/*bootsharp特殊限制开始*/
+@media (min-width: 768px){
+.project_btitle{padding-left: 0px;}
+.culture_introduction{margin-right: 0;}	
+.culture_introduction .col-sm-12{padding-left: 0px;padding-right: 0px;}	
+.development_history{margin-right: 0;}	
+
+.development_history .col-sm-12{padding-left: 0px;padding-right: 0px;}
+.honor{margin-right: 0;}	
+.honor .col-sm-12{padding-left: 0px;padding-right: 0;}	
+/*footer .container .col-sm-3{padding-left: 0px;padding-right: 0px;}*/
+}
+
+/*bootsharp特殊限制结束*/
+
+/*关于资质图片*/
+#bigimage{ position:absolute; display:none; /*大图片的父标签设置相对定位并将显示样式设置为隐藏*/ }   
+#bigimage img{ width:480px; height:363px;}
+/*ipad 特殊处理*/
+@media screen and (min-width:768px) and (max-width:768px){
+.brief_bt{font-size: 20px;}
+}
+@media screen and (min-width:1024px) and (max-width:1024px){
+.brief_bt{font-size: 26px;}
+}

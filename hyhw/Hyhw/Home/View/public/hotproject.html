@@ -1,0 +1,19 @@
+<div class="col-sm-3 successful_case hidden-xs">		
+					<h4>Hot Item</h4>
+					<div class="project_side">
+						<img class="img-responsive center-block" src="http://oms8e6h6f.bkt.clouddn.com/col_case/png/case_img01.jpg"/>
+						<ul>
+						  <volist name="hot" id="v">
+							<li>
+								<a href="{{:U('Index/project_details',array('tid'=>$v['tid'],''))}}">
+									<!--<img class="img-responsive" src="images/flower.png"/>-->
+									<h5>
+										{{$v.name}}
+									</h5>
+								</a>
+							</li>
+							</volist>
+						</ul>
+						<a href="{{:U('Index/project_selection')}}" class="case_more"><h6>more ></h6></a>
+					</div>
+				</div>

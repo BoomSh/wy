@@ -1,0 +1,48 @@
+[ 2017-06-08T08:59:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+SQL: SHOW COLUMNS FROM `hyhw_country_typelist` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `hyhw_country_typelist` WHERE ( pid=0 and cid<>3 ) LIMIT 17   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hyhw_country_project_content` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `hyhw_country_project_content` WHERE ( is_hot=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000254s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.101211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019931s ]
+
+[ 2017-06-08T14:47:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `hyhw_country_typelist` [ RunTime:0.0678s ]
+SQL: SELECT * FROM `hyhw_country_typelist` WHERE ( pid=0 and cid<>3 ) LIMIT 17   [ RunTime:0.0748s ]
+SQL: SHOW COLUMNS FROM `hyhw_country_project_content` [ RunTime:0.0632s ]
+SQL: SELECT * FROM `hyhw_country_project_content` WHERE ( is_hot=1 )  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.188452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+

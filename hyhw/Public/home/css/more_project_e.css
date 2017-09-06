@@ -1,0 +1,35 @@
+body,html{background:#eeeeee ;}
+.all_project{background: #eeeeee;}
+/*国家*/
+.all_state{width: 34%;float: left;padding: 0;margin-right: 2.7%;padding-bottom: 56px;position: fixed;left: 0;top: 56px;height: 100%;
+overflow-y: scroll;}
+.all_state ul{background: #eeeeee;margin-bottom: 0;}
+
+.all_state ul li{border: 1px solid #d7d7d7;border-top: none;height: 50px;line-height: 50px;text-align: center;}
+.all_state ul li h4{height: 50px;line-height: 50px;text-align: center;margin: 0;color: #333333;}
+
+.all_state ul li:nth-of-type(1){display: none;}
+.all_items_content{display: none;}
+.all_items_content:nth-of-type(2){display: block;}
+
+/*项目*/
+.all_items{width: 66%;padding: 0;position: fixed;top: 56px;left: 34%;height: 100%;overflow-y: scroll;padding-bottom: 70px;}
+.all_items ul{background: white;height: 100%;margin-bottom: 0;}
+.all_items ul li{padding: 15px 37px;background: white;}
+.all_items ul li .triangle_blue{float: left;margin-right: 6px;}
+.all_items ul li h5{margin: 0;color: #3899d3;}
+
+
+
+.all_project_active{background: white;border-left: 4px solid #3899d3;}
+
+@media(max-width:767px){
+.menus {
+    width: 100%;
+    margin-top: -56px;
+        position: fixed;
+    top: 56px;
+    z-index: 3;
+}
+footer{display: none;}
+}

@@ -1,0 +1,55 @@
+<<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/more_project_e.css"/>
+	
+	<!--更多项目 更多国家开始-->
+	<section class="all_project visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2 all_state">
+					<!--<h4 class="all_state_title">国家</h4>-->
+					<ul>
+						<li><h4>无限</h4></li>
+						<foreach name="countries" item="vo">
+						
+                                                    <li><h4>{{$vo.typename}}</h4></li>
+                                            </foreach>
+					</ul>
+				</div>
+			<foreach name="countries" item="vo">
+				<div class="col-sm-10 all_items all_items_content">
+					<!--<h4 class="all_items_title">移民项目</h4>-->
+                                        
+					 <ul>
+                                           
+						<li>
+							<img class="img-responsive center-block" src="{{$vo.mobile_pic}}"/>
+						</li>
+                                                
+                      <foreach name="project" item="project_app">
+                                                    
+                       <if condition ="$project_app['cid'] eq $vo['cid']">                    
+						<li>
+                                                   
+							
+							<a href="{{:U('home/index/project_details',array('tid'=>$project_app['tid']))}}"><img class="img-responsive triangle_blue" src="__PUBLIC__/home/images_e/triangle_blue.png"/><h5>{{$project_app.name}}</h5></a>
+						  
+                        </li>
+                                                
+                       </if>
+                      </foreach>              
+                                               
+                                                
+                                                
+				
+					 </ul>
+                                        
+				</div>
+            </foreach>
+				
+				
+				
+			</div>
+		</div>
+	</section>
+	<!--更多项目 更多国家结束-->
+	
+<script src="__PUBLIC__/home/js/more_project.js" type="text/javascript" charset="utf-8"></script>

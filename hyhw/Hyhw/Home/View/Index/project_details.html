@@ -1,0 +1,95 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/project_details_e.css"/>
+	
+	<!--专栏列表开始-->
+	<section class="project_brief">
+		<div class="container">
+			<div class="row small_navigation hidden-xs">
+				<div class="col-sm-12">
+					<h5>current location:</h5>
+					<a href="{{:U('Index/index')}}"><h5>home page ></h5></a>
+					<a href="{{:U('Home/Index/index',array('cid'=>1))}}"><h5>country of immigrants ></h5></a>
+					<a href="{{:U('Home/Index/countries_page',array('cid'=>$country_details['cid']))}}"><h5>{{$country_details.cname}} ></h5></a>
+					<h5 class="present">{{$country_details.name}}</h5>
+				</div>
+			</div>
+			
+			<!--项目介绍开始-->
+			<div class="row project_introduction">
+				<div class="col-sm-9 project_btitle">
+					<div class="row brief_bt">
+						<div class="col-sm-12">
+							<h3>
+								{{$country_details.name}}
+							</h3>
+						</div>
+					</div>
+					<if condition="$country_details[advantage] neq null">
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">Program Advantages</h4>
+							</div>
+							<div class="col-sm-3 national_image">
+								<img class="img-responsive center-block" src="{{$country_details.ad_pic}}"/>
+							</div>
+							<div class="col-sm-9 project_text_passage">
+				                                        {{$country_details.advantage}}
+							</div>				
+					</div>
+                                        </if>
+					<if condition="$country_details[admission] neq null">
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">Application Qualifications</h4>
+							</div>
+							<div class="col-sm-12 project_text_passage">
+				                                        {{$country_details.admission}}
+							</div>				
+					</div>
+                                        </if>
+					<if condition="$country_details[process] neq null">
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">Application Process</h4>
+							</div>
+							<div class="col-sm-12 project_text_passage">
+				                                        {{$country_details.process}}
+							</div>				
+					</div>
+                                        </if>
+                                        <if condition="$country_details[cycle] neq null">
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">Processing Time</h4>
+							</div>
+							<div class="col-sm-12 project_text_passage">
+								{{$country_details.cycle}}
+							</div>				
+					</div>
+                                        </if>
+                                        <if condition="$country_details[condition] neq null">
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">Requirement for transferring to a Permanent Resident</h4>
+							</div>
+							<div class="col-sm-12 project_text_passage">
+				                                 {{$country_details.condition}}
+							</div>				
+					</div>
+                                        </if>
+                                        <if condition="$country_details[ruji] neq null">
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">Citizenship Requirement (citizenship programs)</h4>
+							</div>
+							<div class="col-sm-12 project_text_passage">
+				                                 {{$country_details.ruji}}
+							</div>				
+					</div>
+                                        </if>
+				</div>
+				<include file="public:hotproject" />
+			</div>
+		</div>
+	</section>
+	<!--专栏列表结束-->
+

@@ -1,0 +1,68 @@
+.project_brief{width: 100%;background: #f3f3f3;padding-bottom: 60px;}
+.list_subject{width: 100%;background: #f3f3f3;padding-bottom: 60px;}
+.small_navigation .col-sm-12{padding-left: 0;}
+.small_navigation h5{float: left;margin-right: 5px;padding: 10px 0;}
+.small_navigation a{color: #333333;}
+.present{color: #3899d3;}
+/*大标题*/
+.select_bt h3{margin-top: 10px;}
+.select_bt .col-sm-12{padding-left: 0;}
+/*项目甄选开始*/
+
+/*项目甄选左边栏开始*/
+.project_brief .container .selection_column{margin-left: 0;margin-right: 0;}
+/*.project_brief .container .row:nth-of-type(3){margin-left:0;margin-right: 0px;}*/
+.selection_column_left{border: 1px solid #e0e0e0;background: white;margin-left: -15px;}
+.selection_column_left h4{color: #333333;border-bottom: 1px solid #e0e0e0;padding-bottom: 12px;}
+.selection_column_left h5{color: #333333;margin-top: 0;margin-bottom: 12px;}
+.selection_column_left ul{float: left;padding-bottom: 5px;width: 100%;}
+.selection_column_left ul li{float: left;width: 50%;}
+.selection_column_left ul li h5{color: #999999;cursor: pointer;font-size: 12px;}
+.selection_column_left ul li h5:hover{color: #3899d3;}
+.selection_column_left ul li img{float: left;margin-right: 2px;}
+.selection_column_left ul:nth-of-type(2){border: none;padding-bottom: 20px;}
+/*js*/
+.selection_column_left ul li h5.national_project_selection{color: #3899d3;}
+/*项目甄选左边栏结束*/
+
+/*项目甄选右边栏开始*/
+.selection_column_right{margin-left: 15px;}
+.nation_item{background: white;}
+/*.item_option{padding: 0;border-right: 1px solid #e0e0e0;}*/
+.selection_column_right .project_title{background:#3ea8e5;margin: 0;color: white;
+padding: 12px 0px;border-right: 1px solid #e0e0e0;}
+
+/*.item_option .item_option_bottom{width: 100%;float: left;
+height:100%;}*/
+/*.item_option_bottom ul{float: left;margin-bottom: 0;}
+.item_option .item_option_bottom ul li{float: left;padding-left: 12px;margin-top: 20px;}
+.item_option .item_option_bottom ul li:nth-last-of-type(1){margin-bottom: 10px;}
+.item_option .item_option_bottom ul li img{float: left;margin-right: 4px;}
+.item_option .item_option_bottom ul li h6{float: left;margin: 0;color: #3899d3;cursor: pointer;}
+.item_option .item_option_bottom ul li h5:hover{text-decoration: underline;}
+.country_img_name img{width: 68px;height: 68px;}*/
+.nation_item{margin-bottom: 12px;}
+.table{margin-bottom: 0px;}
+/*.nation_item tbody tr td{width: 25%;}*/
+.nation_item tbody tr td:nth-of-type(1){width: 16%;}
+.nation_item tbody tr td:nth-of-type(2){width: 28%;}
+.nation_item tbody tr td:nth-of-type(3){width: 28%;}
+.nation_item tbody tr td:nth-of-type(4){width: 28%;}
+.nation_item tbody tr td.td_name{vertical-align: middle;}
+.country_img_name img{width: 68px;height: 68px;}
+/*投资移民列*/
+.item_option_bottom ul{margin-bottom: 0;}
+.item_option_bottom ul li{margin-top: 20px;}
+.item_option_bottom ul li:nth-last-of-type(1){margin-bottom: 10px;}
+.item_option_bottom ul li img{margin-right: 4px;float: left;}
+.item_option_bottom ul li h6{margin: 0;color: #3ea8e5;cursor: pointer;}
+.item_option_bottom ul li h6:hover{text-decoration: underline;}
+/*项目甄选右边栏开始*/
+
+/*项目甄选结束*/
+
+
+
+
+/*侧边导航特殊处理*/
+.side_consult ul{position: fixed;right: 15px;z-index: 9999;bottom: 60px;}

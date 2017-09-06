@@ -1,0 +1,352 @@
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/countries_page_e.css"/>
+<script src="__PUBLIC__/home/js/countries_page.js" type="text/javascript" charset="utf-8"></script>	
+	<!--专栏列表开始-->
+	<section class="project_brief">
+		<div class="container">
+			<div class="row small_navigation hidden-xs">
+				<div class="col-sm-12">
+					<h5>current location:</h5>
+					<a href="{{:U('Index/index')}}"><h5>Home Page ></h5></a>
+					<h5>Immigrant Country ></h5>
+					<h5 class="present">{{$country.typename}}</h5></a>
+				</div>
+			</div>
+			
+			<!--项目介绍开始-->
+			<div class="row project_introduction">
+				<div class="col-sm-9 project_btitle">
+					<div class="row brief_bt">
+						<div class="col-sm-12">
+							<h3>{{$country.typename}}</h3>
+						</div>
+					</div>
+					<!--板块-->
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body">
+								<h4 class="project_text_title">superiority</h4>
+							</div>
+
+							<div class="col-sm-2 project_text_passage hidden-xs">
+								<img class="img-responsive" src="{{$country.pic_ad}}"/>
+							</div>
+							<div class="col-sm-10 project_text_passage">
+								{{$country.description}}
+							</div>
+									
+							
+					</div>
+					
+					<!--移民项目开始-->
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body project_guide">
+								<h4 class="project_text_title">Immigration program</h4>
+							</div>
+							<div class="col-sm-12 immigrant_tag">
+								<ul>
+									<if condition="$project_1 neq null"><li >Investment immigration</li></if>
+									<if condition="$project_2 neq null"><li>Skilled migration</li></if>
+									<if condition="$project_3 neq null"><li>Entrepreneurial migration</li></if>
+								</ul>
+							</div>
+							<if condition="$project_1 neq null">
+							<div class="row immigrant_content investment_immigrant" >
+								<!--第一个项目开始-->
+								<volist name = "project_1" id = "project_tz">
+								<div class="row immigrant_content_lists">
+									<div class="col-sm-12 immigrant_content_lists_title">
+										<h4><a href="{{:U('Index/project_details',array('tid'=>$project_tz['tid'],''))}}"><img class="img-responsive center-block" src="__PUBLIC__/home/images_e/triangle.png"/>{{$project_tz.name}}</a></h4>
+										</h4>
+									</div>
+									<div class="col-sm-4 content_tag_img">
+										<img class="img-responsive center-block" src="{{$project_tz.ba_pic}}"/>
+									</div>
+									<div class="col-sm-8 content_tag_essay content_tag_intro">
+										<ul>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">
+															Investment amount:
+														</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">
+															{{$project_tz.money}}
+														</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">
+															Procedure complexity:
+														</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">
+															{{$project_tz.complex}}
+														</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">
+															Residence requirement:
+														</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">
+															{{$project_tz.live}}
+														</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">
+															Management cycle:
+														</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_tz.cycle}}
+														</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">
+															Visa type:
+														</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_tz.visa_type}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row row_btn">										
+													<a href="{{:U('Index/project_details',array('tid'=>$project_tz['tid'],''))}}"><h5 class="details_btn">details</h5></a>
+													<!--<h5 class="order_btn">咨询</h5>-->
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--第一个项目结束-->
+								</volist>
+								
+								<div class="row more_down_up more_down_up_investment_immigrant">
+									<div class="col-sm-12">
+										<img class="img-responsive center-block more_down_investment_immigrant" src="__PUBLIC__/home/images_e/more_down.png"/>
+										<img class="img-responsive center-block more_up_investment_immigrant" src="__PUBLIC__/home/images_e/more_up.png"/>
+									</div>
+								</div>
+							</div>
+                            </if>
+                            <if condition="$project_2 neq null">
+							<div class="row immigrant_content skilled_migration" >
+							 <volist name = "project_2" id = "project_js">
+								<!--第一个项目开始-->
+								<div class="row immigrant_content_lists">
+									<div class="col-sm-12 immigrant_content_lists_title">
+										<h4><a href="{{:U('Index/project_details',array('tid'=>$project_js['tid'],''))}}"><img class="img-responsive center-block" src="__PUBLIC__/home/images_e/triangle.png"/>{{$project_js.name}}</a></h4>
+									</div>
+									<div class="col-sm-4 content_tag_img">
+										<img class="img-responsive center-block" src="{{$project_js.ba_pic}}"/>
+									</div>
+									<div class="col-sm-8 content_tag_essay content_tag_intro">
+										<ul>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">English requirements:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_js.english}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">residence requirements:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_js.live}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left"> Processing Time:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_js.cycle}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">working experience:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_js.work}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">Visa Type:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_js.visa_type}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row row_btn">										
+													<a href="{{:U('Index/project_details',array('tid'=>$project_js['tid'],''))}}"><h5 class="details_btn">details</h5></a>
+													<!--<h5 class="order_btn">咨询</h5>-->
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!--第一个项目结束-->
+								</volist>
+								<div class="row more_down_up more_down_up_skilled_migration">
+									<div class="col-sm-12">
+										<img class="img-responsive center-block more_down_skilled_migration" src="__PUBLIC__/home/images_e/more_down.png"/>
+										<img class="img-responsive center-block more_up_skilled_migration" src="__PUBLIC__/home/images_e/more_up.png"/>
+									</div>
+								</div>
+							</div>
+							</if>
+							  <if condition="$project_3 neq null">
+							<div class="row immigrant_content entrepreneurship_immigrant">
+								<!--第一个项目开始-->
+                                                                <foreach name="project_3" item="project_cy">
+								<div class="row immigrant_content_lists">
+									<div class="col-sm-12 immigrant_content_lists_title">
+										<h4><a href="{{:U('Home/Index/project_details',array('tid'=>$project_cy['tid'],''))}}"><img class="img-responsive center-block" src="__PUBLIC__/home/images_e/triangle.png"/>{{$project_cy.name}}</a></h4>
+									</div>
+									<div class="col-sm-4 content_tag_img">
+										<img class="img-responsive center-block" src="{{$project_cy.ba_pic}}"/>
+									</div>
+									<div class="col-sm-8 content_tag_essay content_tag_intro">
+										<ul>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">Investment Amount:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_cy.money}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">Language requirements:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_cy.english}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">Processing Time:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_cy.cycle}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">Business Plan:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_cy.plan}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-sm-4">
+														<h5 class="text-left">Business Environment:</h5>
+													</div>
+													<div class="col-sm-8">
+														<h5 class="text-left">{{$project_cy.environment}}</h5>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row row_btn">										
+													<a href="{{:U('Index/project_details',array('tid'=>$project_cy['tid'],''))}}"><h5 class="details_btn">details</h5></a>
+													<!--<h5 class="order_btn">咨询</h5>-->
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+                                                                </foreach>
+								<!--第一个项目结束-->
+								
+								<div class="row more_down_up more_down_up_entrepreneurship_immigrant">
+									<div class="col-sm-12">
+										<img class="img-responsive center-block more_down_entrepreneurship_immigrant" src="__PUBLIC__/images/more_down.png"/>
+										<img class="img-responsive center-block more_up_entrepreneurship_immigrant" src="__PUBLIC__/images/more_up.png"/>
+									</div>
+								</div>
+							</div>	</if>						
+					</div>
+					<!--移民项目结束-->
+					
+					<!--移民指南开始-->
+					<div class="row project_text">
+							<div class="col-sm-12 project_text_body project_guide">
+								<h4 class="project_text_title">Immigration Guide</h4>
+							</div>
+							<div class="col-sm-12 guide_tag">
+								<ul>
+									<li class="active">material benefits</li>
+									<li>education</li>
+									<li>tour</li>
+									<li>medical treatment</li>
+								</ul>
+							</div>
+							<volist name="country_info" id="country_guide" key="k">
+							<div class="row content" <if condition="$k eq 1">style="display: block;"</if>>
+								<div class="col-sm-3 content_tag_img">
+									<img class="img-responsive center-block" src="{{$country_guide.pic}}"/>
+								</div>
+								<div class="col-sm-9 content_tag_essay">
+									{{$country_guide.intro}}
+								</div>
+							</div>
+							</volist>
+							
+							
+					</div>
+					<!--移民指南结束-->	
+				</div>
+				<include file="public:hotproject" />
+			</div>
+		</div>
+	</section>
+	<!--专栏列表结束-->
+	
